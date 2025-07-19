@@ -155,7 +155,7 @@ def find_sha1_plaintext(max_length, target_hash, charset='abcdefghijklmnopqrstuv
         return None
 
 if __name__ == "__main__":
-    print("Please Enter a small string to hash and crack(Ideally less than 6 characters long without any symbols and knowing that the characters will be cast to lower case): ")
+    print("Please Enter a small string to hash and crack(Ideally less than 6 characters long and without any symbols, knowing that the characters will be cast to lower case): ")
     plaintext = input().lower()
 
     h = sha1_hash.generate(plaintext)
